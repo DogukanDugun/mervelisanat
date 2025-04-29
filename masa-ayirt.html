@@ -151,7 +151,26 @@
                     <div class="region region-highlighted">
                         <div data-drupal-messages-fallback class="hidden"></div>
                     </div>
-
+                    <style>
+                        .video-top {
+                            position: relative;
+                            width: 100%;
+                            height: 40vh; /* İstersen başka bir yükseklik de verebilirsin */
+                            overflow: hidden;
+                        }
+                        
+                        .video-top video {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            z-index: -1;
+                        }
+                        
+                        
+                        </style>
                     <a id="main-content" tabindex="-1"></a>
                     <div class="region region-content">
                         <div id="block-creativespaceinformation" class="block block-block-content block-block-content893b1c08-9c21-42e6-bbc1-57b31e1e11ec"></div>
@@ -166,22 +185,10 @@
 
                                                     <div class="node__content">
                                                         <div class="video-top clearfix">
-                                                            <iframe
-                                                                allowfullscreen="true"
-                                                                src="http://www.provector.dk/embed/?g=35c904eff9c64e86b5ec64f7b4e97a75&amp;cid=206&amp;pl=0&amp;start=0&amp;loop=1&amp;playbutton=0&amp;controls=0&amp;ver=2"
-                                                                allowtransparency="true"
-                                                                frameborder="0"
-                                                                scrolling="no"
-                                                                class="provector_embed"
-                                                                allowfullscreen
-                                                                mozallowfullscreen
-                                                                webkitallowfullscreen
-                                                                oallowfullscreen
-                                                                msallowfullscreen
-                                                                width="100%"
-                                                                height="100%"
-                                                            >
-                                                            </iframe>
+                                                            <video autoplay muted loop playsinline>
+                                                                <source src="videolar/198_creativespacevideo06072023121833.mp4FLASH.mp4" type="video/mp4">
+                                                                Tarayıcınız video öğesini desteklemiyor.
+                                                            </video>
                                                             <div class="video-top--text">
                                                                 <h1>
                                                                     <span property="schema:name" class="field field--name-title field--type-string field--label-hidden">Ruhunu Renklendir, Masanı Ayırt!</span>

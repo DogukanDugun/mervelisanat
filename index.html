@@ -57,7 +57,7 @@
 
                             <ul class="menu">
                                 <li class="menu-item">
-                                    <a href="da/atolyeler.html" data-drupal-link-system-path="node/37">Açılış Saatleri</a>
+                                    <a href="atolyeler.html" data-drupal-link-system-path="node/37">Açılış Saatleri</a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="masa-ayirt.html" data-drupal-link-system-path="node/36">Bir Masa Ayırtın</a>
@@ -152,7 +152,26 @@
                         </div>
                     </div>
                 </div>
-
+                <style>
+                    .video-top {
+                        position: relative;
+                        width: 100%;
+                        height: 40vh; /* İstersen başka bir yükseklik de verebilirsin */
+                        overflow: hidden;
+                    }
+                    
+                    .video-top video {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: -1;
+                    }
+                    
+                    
+                    </style>
                 <main role="main">
                     <div class="region region-highlighted">
                         <div data-drupal-messages-fallback class="hidden"></div>
@@ -169,30 +188,21 @@
                                             <div class="block block-ctools block-entity-viewnode">
                                                 <article about="/da/paint-your-own-pottery" typeof="schema:WebPage" class="node node--type-page node--view-mode-full-layout">
                                                     <span property="schema:name" content="Paint Your Own Pottery" class="rdf-meta hidden"></span>
-
+                                            
                                                     <div class="node__content">
                                                         <div class="video-top clearfix">
-                                                            <iframe
-                                                                allowfullscreen="true"
-                                                                src="http://www.provector.dk/embed/?g=d943b3def5fa443b9df70fbdd3ea665f&amp;cid=206&amp;pl=0&amp;start=0&amp;loop=1&amp;playbutton=0&amp;controls=0&amp;ver=2"
-                                                                allowtransparency="true"
-                                                                frameborder="0"
-                                                                scrolling="no"
-                                                                class="provector_embed"
-                                                                allowfullscreen
-                                                                mozallowfullscreen
-                                                                webkitallowfullscreen
-                                                                oallowfullscreen
-                                                                msallowfullscreen
-                                                                width="100%"
-                                                                height="100%"
-                                                            >
-                                                            </iframe>
+                                                            <video autoplay muted loop playsinline>
+                                                                <source src="videolar/198_bannertilhjemmesiden128032025120236.mp4FLASH.mp4" type="video/mp4">
+                                                                Tarayıcınız video öğesini desteklemiyor.
+                                                            </video>
+                                            
                                                             <div class="video-top--text">
                                                                 <h1>
-                                                                    <span property="schema:name" class="field field--name-title field--type-string field--label-hidden">Merveli <br>Sanat</span>
+                                                                    <span property="schema:name" class="field field--name-title field--type-string field--label-hidden">
+                                                                        Merveli <br>Sanat
+                                                                    </span>
                                                                 </h1>
-
+                                            
                                                                 <div class="text-formatted field field--name-field-text-long field--type-text-long field--label-hidden field__item">
                                                                     <p>
                                                                         Mervelisanat’ta, yaratıcılığın sadece belli kişilere ait değil, herkesin içinde var olduğuna inanıyoruz. <br />
